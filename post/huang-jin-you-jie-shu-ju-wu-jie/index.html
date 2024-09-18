@@ -1,0 +1,500 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>黄金有价，数据无价！ | 脑雾 BLOG</title>
+<link rel="stylesheet" href="https://onioncinema.blog/styles/main.css">
+<script src="https://onioncinema.blog/media/script.js"></script>
+
+    
+
+  <meta name="description" content="一定要学会数据管理！
+前言
+在经历过两次数据丢失的痛苦经历之后，我痛定思痛，认真学习了一下数据备份以及管理的方法，目前来看还是很基础，但对现阶段的我来说已经足够用了。
+文件夹的管理和命名
+
+所有的命名都要遵循一个 标准 ，不能每次都用不同的...">
+  <script src="https://onioncinema.blog/media/prism.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+</head>
+<body>
+  <div class="antialiased">
+    <div class="max-w-5xl mx-auto px-6 md:px-8">
+      <div class="flex justify-between items-center mt-10">
+  <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-900 font-medium md:font-normal leading-none">
+    <a href="https://onioncinema.blog">脑雾 BLOG</a>
+  </h1>
+  <div class="block lg:hidden" id="thumb-menu">
+    <button id="thumb-open" type="button" class="block">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 6H22V7H2V6ZM2 12H22V13H2V12ZM22 18H2V19H22V18Z" class="fill-current text-gray-900"></path></svg>
+    </button>
+    <button id="thumb-close" type="button" class="hidden">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L20 20M20 4L4 20" class="" stroke="#1A202C"></path></svg>
+    </button>
+  </div>
+</div>
+<div id="nav-list" class="lg:block hidden">
+  <div class="w-full block lg:flex lg:justify-between lg:border-b lg:border-gray-400 mt-10 text-gray-700 font-medium lg:text-lg">
+    <div class="lg:flex -mb-px">
+      
+        
+          <a href="/" class="nav-link">首页</a>
+        
+      
+        
+          <a href="/archives" class="nav-link">归档</a>
+        
+      
+        
+          <a href="/tags" class="nav-link">标签</a>
+        
+      
+        
+          <a href="/post/about" class="nav-link">关于</a>
+        
+      
+    </div>
+    <div class="lg:flex">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+      <a href="https://onioncinema.blog/atom.xml" class="block mt-6 lg:mt-0 lg:ml-8 flex align-center hover:text-gray-900" target="_blank">
+        <div>RSS</div>
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1 -mt-px"><path d="M16.5 13V18.5H6.5V8.5H12" stroke="#4A5568"></path> <path d="M10 15L18.5 6.5" stroke="#4A5568"></path> <path d="M14 6.5H18.5V11" stroke="#4A5568"></path></svg>
+      </a>
+    </div>
+  </div>
+</div>
+      <div class="mb-20 md:flex mt-10 lg:mt-6 md:border-t md:border-gray-400 md:pt-2 lg:border-t-0 lg:pt-0">
+        <div class="w-full md:w-2/3 mt-6">
+          <h1 class="text-4xl">黄金有价，数据无价！</h1>
+          
+          <div class="mt-6 lg:mt-10 post-content">
+            <p><strong>一定要学会数据管理！</strong></p>
+<h1 id="前言">前言</h1>
+<p>在经历过两次数据丢失的痛苦经历之后，我痛定思痛，认真学习了一下数据备份以及管理的方法，目前来看还是很基础，但对现阶段的我来说已经足够用了。</p>
+<h1 id="文件夹的管理和命名">文件夹的管理和命名</h1>
+<ol>
+<li>所有的命名都要遵循一个 <strong>标准</strong> ，不能每次都用不同的分类和命名方式。<br>
+举个栗子：<br>
+项目命名：日期_项目名称<br>
+内容层级：<img src="https://onioncinema.blog/post-images/1654695672688.jpeg" alt="" loading="lazy"></li>
+<li>命名时用下划线代替空格，因为电脑更好识别<br>
+举个栗子：<br>
+导出成片命名：<strong>时间_片名_分辨率_编码_格式_导出人_备注_版本</strong></li>
+</ol>
+<h1 id="拷卡">拷卡</h1>
+<ol>
+<li>标记所有的储存卡<br>
+在卡上标注好卡的序号，自己的联系方式等</li>
+<li>用大力胶标记拍完的卡<br>
+录满一张卡之后用大力胶把读取数据的部分贴上，有记号笔可以在上面写好卷号<br>
+如果是带锁的SD卡，建议录满之后锁上这张卡，避免意外的格式化等问题</li>
+<li>格式化前先回放确认素材<br>
+在把卡格掉之前先确认内容，文件号，卡的卷号，再次防止格式化错的卡</li>
+<li>给储存卡一个温暖的家 （更多针对SD卡）<br>
+不要散放，一把抓，或者随意的放在口袋和包里，很多储存卡很小，很容易丢失<br>
+买一个卡盒，防水防震，也可以更好地管理储存卡<br>
+装着素材的卡也一定要放回卡盒</li>
+<li>在拷卡时拷贝卡里的所有内容而不是单单拷贝素材所在文件夹（是拷贝，而不是剪切！）<br>
+很多时候素材的内容在大文件夹的子文件夹里，还有很多小文件夹装着拍摄数据，尽管很多数据不重要，   但是拷贝整张卡可以降低出错的概率。<br>
+拷贝完成后可以打开文件夹的属性来对比和卡的文件夹数据和文件数量来确保万无一失</li>
+<li>拷贝素材一定要备份！（重中之重）<br>
+行业标准为一份素材至少要有三分拷贝放在至少两个介质中，其中两份可以留在本地，而其中一份要放    在异地。这样也最大程度上了避免一切天灾人祸发生后对于数据的损害。<br>
+但这样的标准太高，一般存两份在本地，一份自用，一份作为备份，还可以再多拷贝一份放在云端。<br>
+<strong>拷贝时一定要从卡拷到硬盘，而不是卡拷到第一块硬盘，再由第一块硬盘拷到第二块硬盘......</strong></li>
+<li>归档或保存一份高质量的母带<br>
+具体做法就是将没用的素材删除，只保留有用的素材，在达芬奇，PR等软件中均有类似的功能。但如果    没有这个条件，可以选择保存一份未调色的高质量母带，即用ProRes，DNxHR的编码格式导出，用mov格式封存的高质量数字成片。</li>
+</ol>
+<h1 id="结语">结语</h1>
+<p>数据管理是一件非常麻烦且繁琐的事，但它是十分必要的。<strong>不要在关键素材丢失时才追悔莫及</strong>，这件事上不能懒惰！</p>
+<h1 id="引用">引用</h1>
+<p>拷素材务必养成的的五个好习惯！作者：NOFACE不是大触<br>
+https://www.bilibili.com/video/BV1dY4y1H7dC?spm_id_from=333.999.0.0</p>
+<p>关键素材被删！找不到素材？影视飓风是如何摆脱丢数据噩梦的 作者：影视飓风<br>
+https://www.bilibili.com/video/BV1yA4y1U77y?spm_id_from=333.999.0.0</p>
+<p>08/06/2022 于 York</p>
+<p>本期博客图片版：<br>
+<img src="https://onioncinema.blog/post-images/1654681705637.jpg" alt="" loading="lazy"></p>
+
+          </div>
+          
+        </div>
+        
+          <div class="w-full md:w-1/3">
+            <div class="mt-6 md:pl-8">
+              <h4 class="text-base font-thin text-gray-700 mb-2">发布时间</h4>
+              <div class="text-lg mb-6">2022-06-08</div>
+              <h4 class="text-base font-thin text-gray-700 mb-2">标签</h4>
+              <div class="mb-6">
+                
+              </div>
+              <h4 class="text-base font-thin text-gray-700 mb-2">阅读时间</h4>
+              <div class="text-lg mb-6">4 min read</div>
+              <h4 class="text-base font-thin text-gray-700 mb-2">相关阅读</h4>
+              <div class="border-b border-gray-400">
+                
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  <div class="py-6 text-gray-700 text-sm">暂无相关文章</div>
+
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="footer border-gray-400 border-t pt-6 mt-6 sm:mt-8 md:mt-10 mb-20 text-gray-700 text-sm sm:text-base lg:text-lg">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+    </div>
+  </div>
+  <script>
+    Prism.highlightAll()
+  </script>
+</body>
+</html>
