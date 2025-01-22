@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>#日记 切片受到原up主的赞赏了！ | 脑雾 BLOG</title>
+<link rel="shortcut icon" href="https://onioncinema.github.io/favicon.ico?v=1737558531344">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://onioncinema.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="#日记 切片受到原up主的赞赏了！ | 脑雾 BLOG - Atom Feed" href="https://onioncinema.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="我这一年以来对常熟阿诺特别着迷，至于为什么，可以放在以后再讲。
+有一位up主对阿诺的研究特别深入，我平时很喜欢看他的频道！
+他的频道内容简单来说就是从各个角度分析阿诺，他对阿诺的理解远比阿诺自己要深。
+昨天突发奇想，使用录播软件录制了他26..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://onioncinema.github.io">
+  <img class="avatar" src="https://onioncinema.github.io/images/avatar.png?v=1737558531344" alt="">
+  </a>
+  <h1 class="site-title">
+    脑雾 BLOG
+  </h1>
+  <p class="site-description">
+    随便写写
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              #日记 切片受到原up主的赞赏了！
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-11-28
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>我这一年以来对常熟阿诺特别着迷，至于为什么，可以放在以后再讲。</p>
+<p>有一位up主对阿诺的研究特别深入，我平时很喜欢看<a href="https://space.bilibili.com/3494369550142019">他的频道</a>！</p>
+<p>他的频道内容简单来说就是从各个角度分析阿诺，他对阿诺的理解远比阿诺自己要深。</p>
+<p>昨天突发奇想，使用录播软件录制了他26日的直播，然后把几个精彩片段剪成了切片上传。</p>
+<p>没想到就得到了他的赞扬！</p>
+<p><img src="https://static.gridea.dev/f77cca56-ddb3-4afa-8ddc-95106ee58eca/pCfpRShjP.jpeg%7D" alt="" loading="lazy">之后有空会剪更多的。<br>
+2023-11-27</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://onioncinema.github.io/post/diary-2023-11-26/">
+              <h3 class="post-title">
+                #日记 关于记账
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://onioncinema.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
