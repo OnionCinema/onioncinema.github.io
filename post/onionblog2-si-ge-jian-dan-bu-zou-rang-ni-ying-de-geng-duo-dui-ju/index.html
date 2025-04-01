@@ -1,0 +1,476 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>脑雾 BLOG</title>
+<meta name="description" content="随便写写" />
+<link rel="shortcut icon" href="https://onioncinema.github.io/favicon.ico?v=1743524186312">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://onioncinema.github.io/styles/main.css">
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://onioncinema.github.io">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://onioncinema.github.io/images/avatar.png?v=1743524186312" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">脑雾 BLOG</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E5%8E%9F%E6%96%87%E5%9B%9B%E5%BC%A0%E9%99%84%E5%9B%BE">原文四张附图</a></li>
+<li><a href="#%E6%AD%A3%E6%96%87">正文</a>
+<ul>
+<li><a href="#%E4%B8%80-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-hsreplaynet-%E6%9D%A5%E4%BC%98%E5%8C%96%E8%B5%B7%E6%89%8B%E7%95%99%E7%89%8C">一. 如何使用 HSReplay.net 来优化起手留牌</a></li>
+<li><a href="#%E4%BA%8C-%E8%AE%A1%E5%88%92%E5%A5%BD%E4%BD%A0%E7%9A%84%E6%AF%8F%E4%B8%AA%E5%9B%9E%E5%90%88">二. 计划好你的每个回合</a>
+<ul>
+<li><a href="#%E5%89%8D30s">前30s</a></li>
+<li><a href="#30s-60s">30s-60s</a></li>
+<li><a href="#60s-75s">60s-75s</a></li>
+<li><a href="#%E6%B8%B8%E6%88%8F%E7%BB%93%E6%9D%9F">游戏结束</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89-%E9%80%82%E7%94%A8%E4%BA%8E80-90%E7%8E%A9%E5%AE%B6%E7%9A%84%E6%B8%B8%E6%88%8F%E8%AE%A1%E5%88%92%E6%AD%A4%E9%83%A8%E5%88%86%E6%9C%89%E7%82%B9%E9%9A%BE%E7%90%86%E8%A7%A3%E7%BF%BB%E8%AF%91%E8%B5%B7%E6%9D%A5%E4%B9%9F%E6%9C%89%E4%BA%9B%E5%9B%B0%E9%9A%BE%E4%B8%8D%E8%BF%87%E6%98%AF%E9%9D%9E%E5%B8%B8%E6%A0%B8%E5%BF%83%E7%9A%84%E9%83%A8%E5%88%86">三. 适用于80-90%玩家的游戏计划（此部分有点难理解，翻译起来也有些困难，不过是非常核心的部分）</a></li>
+<li><a href="#%E5%9B%9B-%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%80%E5%B1%80%E6%B8%B8%E6%88%8F%E4%B9%8B%E5%90%8E%E8%BF%9B%E8%A1%8C%E5%8F%8D%E6%80%9D">四. 如何在一局游戏之后进行反思</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%E6%80%9D%E8%80%83">第一步：思考</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%E8%AE%B0%E5%BD%95">第二步：记录</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%E8%90%BD%E5%AE%9E%E4%BD%A0%E7%9A%84%E5%8F%8D%E6%80%9D%E5%AF%B9%E5%B1%80%E5%AE%8C%E7%9A%84%E5%8F%8D%E6%80%9D%E6%97%B6%E9%97%B4%E6%9C%80%E5%A5%BD%E4%B8%BA2%E5%88%86%E9%92%9F">第三步：落实你的反思（对局完的反思时间最好为2分钟）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%BB%93%E8%AF%AD">结语</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8">引用</a></li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
+    <a class="rss" href="https://onioncinema.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">四个简单步骤让你赢得更多对局</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2022-06-09 / 12 min read
+        </div>
+        
+        <div class="post-content yue">
+          <p><em>不要只靠运气来打牌</em></p>
+<h1 id="前言">前言</h1>
+<p>原文作者 Tom 'Meati' Wayland 是外服高分段的常客（昨天刚刚看到他用防战登顶），同时也是剑桥大学的博士。他的推特置顶放了标题为 &quot;四个简单步骤让你赢得更多对局&quot;的四张图片，具体从起手留牌，回合计划，游戏计划和赛后反思四个方面来指导玩家们如何通过更多的技巧和思考来赢下更多对局。读完之后深受启发，于是决定翻译出来，希望能够帮助到更多的玩家。本文比较适合于中低分段和遇到瓶颈卡在一定分段上不去的玩家。<br>
+*本文中的我指原文作者 Meati 而不是译者本人。</p>
+<h1 id="原文四张附图">原文四张附图</h1>
+<p><img src="https://onioncinema.github.io/post-images/1654769162438.jpg" alt="" loading="lazy"><br>
+<img src="https://onioncinema.github.io/post-images/1654769166587.png" alt="" loading="lazy"><br>
+<img src="https://onioncinema.github.io/post-images/1654769169741.png" alt="" loading="lazy"><br>
+<img src="https://onioncinema.github.io/post-images/1654769173441.png" alt="" loading="lazy"></p>
+<h1 id="正文">正文</h1>
+<h2 id="一-如何使用-hsreplaynet-来优化起手留牌">一. 如何使用 HSReplay.net 来优化起手留牌</h2>
+<ol>
+<li>
+<p>登入 hsreplay.net 后点击 <strong>套牌</strong> 选项<br>
+<img src="https://onioncinema.github.io/post-images/1654769403166.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择你想要的的职业和构筑<br>
+<img src="https://onioncinema.github.io/post-images/1654769476713.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>在时间范围一栏选择最新的补丁<br>
+如果新版本刚刚上线，数据不足，可以选择<strong>最近30天</strong>作为时间范围<br>
+<img src="https://onioncinema.github.io/post-images/1654769787986.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择你的目标分段<br>
+该功能只对 HSReplay 会员开放，但不要担心，因为这一步不是必要的。<br>
+我通常选择含金量最高的 <strong>传说：前1000名</strong> 作为参考数据<br>
+<img src="https://onioncinema.github.io/post-images/1654770346491.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击你想要的构筑中最受欢迎的版本<br>
+我们一般都会选择最受欢迎的构筑，因为我们需要大量的样本来证明起手留下什么才是最好的。<br>
+<img src="https://onioncinema.github.io/post-images/1654770941084.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>点击<strong>起手胜率</strong>使其由高到低排列<br>
+<img src="https://onioncinema.github.io/post-images/1654771124106.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>沿着<strong>起手胜率</strong>向下浏览，直到你发现一个明显的胜率断层<br>
+在这个断层前的卡牌一般是你起手必留的（译者注：这个方法比较笼统，有些时候可能不准）。用这个方法来找，各个卡组应该总能找到2-5张必留牌。<br>
+<img src="https://onioncinema.github.io/post-images/1654771446511.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>选择你对手的职业<br>
+<em>（会员功能）</em><br>
+很多时候我们起手留牌会根据对手职业的变化而发生改变。<br>
+如果你有 HSReplay 的会员，你可以选择在网页左侧的<strong>选择您的对手</strong>来查看对阵各个职业的不同起手留牌。<br>
+<img src="https://onioncinema.github.io/post-images/1654772689923.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>找到不在常规必留牌里，但对阵个别职业胜率很高的新卡<br>
+这些卡将作为你对阵个别职业的特殊留牌<br>
+举个例子：单单以数据来说，在防战对阵贼的对局中起手留英雄牌和奈利的胜率意外的高。<br>
+<img src="https://onioncinema.github.io/post-images/1654772752211.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>重复第九步，找到对阵所有职业的特殊留牌<br>
+记录下所有的<strong>常规必留牌</strong>和<strong>特殊留牌</strong></p>
+</li>
+<li>
+<p>小结</p>
+<ul>
+<li>记住，要不断地反思自己的留牌。</li>
+<li>一名<strong>优秀牌手的经验胜过 HSReplay 上的数据</strong>。经验和大数据的相辅相成才能成就一个好的起手留牌。</li>
+<li>例如，HSReplay 上说 节奏战（译者注：原文写于22年1月，原文为 Tempo Warrior，不确定是什么卡组，但不影响理解。）起手不应该留海盗之锚，但我总是会留，因为我觉得这张卡碉堡了。</li>
+<li>HSReplay 不能告诉你那些卡应该<strong>起手一起留</strong>，因为它并不能统计卡之间的配合。所以你应该在对战和反思中不断学习。例如，战士内战时可以把怒火中烧和战槌挑战者一起留下，或者说在玩贼的时候可以把暗影步和爱德温范克里夫一起留下。</li>
+<li><strong>先后手</strong>也会影响你的留牌，HSReplay 会员可以解锁相关数据。</li>
+<li>如果你很想提升炉石技术，但囊中羞涩，那么 HSReplay 的会员是我推荐你除卡包外首选的消费项目。具体消费方案对比（非广告）：https://hsreplay.net/premium/#compare-plans</li>
+<li>好好的改进你的起手留牌是<strong>最简单</strong>的提升胜率的方式。</li>
+</ul>
+</li>
+</ol>
+<h2 id="二-计划好你的每个回合">二. 计划好你的每个回合</h2>
+<p>你的每个回合有75秒，高效的计划可以提高你打出回合最优解的概率。<br>
+<img src="https://onioncinema.github.io/post-images/1654775175017.png" alt="" loading="lazy"></p>
+<h3 id="前30s">前30s</h3>
+<ol>
+<li>
+<p>第一步 - 计算斩杀</p>
+<ul>
+<li>对局开始阶段无需考虑</li>
+<li>随着游戏进行变得越来越关键</li>
+<li>考虑分两个回合斩杀的情况：让你的对手提心吊胆</li>
+<li>很容易就会忘记，尤其是在局面十分胶着，双方打得你来我回的情况！</li>
+</ul>
+</li>
+<li>
+<p>第二步 - 问问你自己，你这回合的<strong>计划</strong>是什么？</p>
+<ul>
+<li>我这回合应该把<strong>场面最大化</strong>吗？</li>
+<li>我应不应该<strong>清对手的场</strong>？</li>
+<li>我应不应该<strong>给对手压力全走脸</strong>，从而在2-3个回合之内干掉他？</li>
+<li>我应不应该<strong>奶脸/叠甲</strong>来苟命？</li>
+<li>我应不应该<strong>抽牌/给手牌加更多资源</strong>？</li>
+<li>我这回合有没有<strong>特殊的计划</strong>想要完成？（例如：做任务）</li>
+<li>我的优势很大吗？是不是会输给特定的1-2张卡？我应不应该<strong>防一下</strong>那1-2张卡？</li>
+</ul>
+</li>
+<li>
+<p>第三步 - 依照我的手牌，我这回合能有什么<strong>打法</strong>？哪种打法是最好的？</p>
+<ul>
+<li>对比一下所有打法的结果</li>
+<li>哪种打法会让对手最难受？</li>
+<li>出牌通常比不出牌要好</li>
+<li>最好用完大多数/所有的法力水晶</li>
+<li>如果分配不完所有的水晶，可以试着用一些低费牌来完善你的回合计划。</li>
+</ul>
+</li>
+</ol>
+<h3 id="30s-60s">30s-60s</h3>
+<ol start="4">
+<li>第四步 - 想想你出牌的<strong>必然步骤</strong>
+<ul>
+<li>我这回合出牌的<strong>顺序</strong>是怎样的？先抽牌/发现/造牌（例如：卡扎库斯的战吼）</li>
+<li>我的随从应该如何<strong>站位</strong>来应对对方的解牌？</li>
+<li>我这回合如果走脸会有什么<strong>后果</strong>？还是说应该<strong>解场</strong>？</li>
+</ul>
+</li>
+</ol>
+<h3 id="60s-75s">60s-75s</h3>
+<ol start="5">
+<li>第五步 - 绳子开始燃烧
+<ul>
+<li>当绳子开始烧起来，意味着你还有<strong>15s</strong>来操作。</li>
+<li>如果你还没准备好，那就需要赶紧<strong>停止思考，开始出牌</strong>了！</li>
+<li>如果你这回合要出或要抽的牌很多（例如：贼的迦拉克隆/范克里夫，战士的怒火中烧），那么你应该在绳子烧起来之前就开始操作！</li>
+</ul>
+</li>
+</ol>
+<h3 id="游戏结束">游戏结束</h3>
+<ol start="6">
+<li>本局游戏之后 - <strong>反思</strong>你的选择
+<ul>
+<li>我打的好吗？</li>
+<li>我下次怎样打才能更好？</li>
+<li>我从这个对局中都学到了什么？我需要改变我的游戏计划吗？</li>
+<li>在匹配下一局游戏的时候，可以试着写下一个从上局游戏学到的小点！</li>
+</ul>
+</li>
+</ol>
+<h2 id="三-适用于80-90玩家的游戏计划此部分有点难理解翻译起来也有些困难不过是非常核心的部分">三. 适用于80-90%玩家的游戏计划（此部分有点难理解，翻译起来也有些困难，不过是非常核心的部分）</h2>
+<ol>
+<li>
+<p>第一阶段 - 抢节奏阶段</p>
+<ul>
+<li>
+<p>双方都会<strong>激进的使用资源</strong>来尝试赢得场面。</p>
+</li>
+<li>
+<p>如果你对手的套牌核心是<strong>增益随从</strong>（按译者理解给出例子：一切快攻卡组，现版本的纳迦牧等），那么你在这一阶段通常扮演<strong>控场者</strong>的角色（按译者理解给出例子：大多为防战等控制卡组）。那么你需要做出<strong>高效的资源</strong>交换来控制对手的场面，从而让对手手中的增益卡作用越来越小。</p>
+</li>
+<li>
+<p>如果你对手的套牌并<strong>不增益随从</strong>，那你将扮演<strong>进攻者</strong>的角色。默认的打法就是<strong>走脸</strong>，唯一做场面交换的情况是当对面场上有特别有价值的东西存在（按译者理解给出例子：嘲讽，站在场上效益特别高的随从等）。</p>
+</li>
+<li>
+<p>记住，<strong>节奏</strong> = 用手上的牌创造最大的价值</p>
+</li>
+<li>
+<p>对于<strong>节奏的第一层理解 = 将手中的牌组合起来，打出最大效益。</strong></p>
+</li>
+<li>
+<p>对于<strong>节奏的第二层理解 = 想办法将下个自己回合开始时的效益最大化</strong>，而不是只考虑如何在这个回合结束时的效益最大化。（也就是说考虑到对手在场面上的变数以及可能有的手牌）</p>
+</li>
+<li>
+<p>达到第一层理解的顶端就已经足够上传说了（译者就卡在这个阶段了）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>第二阶段 - 游戏后期<br>
+抢节奏阶段将在下面两种情况中出现一种时结束：<br>
+1）其中一名玩家赢下了场面（通常定义为在自己回合开始时就已经取得场面上的优势）<br>
+2）其中一名玩家放弃场面并开始疯狂走脸</p>
+<ul>
+<li>
+<p>如果赢得了抢节奏阶段：<br>
+在每个回合开始时问自己：<strong>我这把怎么样会输？<strong>这样可以帮助你判断出对手有什么牌/正确的判断形势。<br>
+1）我的对手有没有可以一举把我场面清掉的卡？我需不需要把场面做大来应对那张卡？<br>
+2）我的对手可能在未来2-3个回合内用手上的卡牌把我干掉吗？我需不需要</strong>回复一下血量</strong>或者<strong>持续给对面压力</strong>，在对面干掉我之前干掉他？</p>
+</li>
+<li>
+<p>如果输了抢节奏阶段<br>
+问自己：<strong>我需要做什么才能赢下这局游戏？</strong><br>
+1）我能用我手上的卡来<strong>重新获得场面</strong>吗？<br>
+2）我的对手生命值够低吗？我能不能<strong>在未来2-3个回合内用手上的牌干掉他</strong>？<br>
+3）我需要一张不在我手里但在牌库里的牌吗？我能不能想个方法<strong>抽上来</strong>然后把它打出去？<br>
+这是就不要太多顾虑对手手里可能有的牌了。如果对手已经领先并且手上全是最好的牌，那这把大概率赢不下来了。（译者注：意思就是，既然已经落后，就不要什么都防了）<br>
+专注于如何用你想好的方法赢得这局游戏。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>第三阶段 - 反思游戏</p>
+<ul>
+<li>我在抢节奏阶段的选择让我赢下场面了吗？如果我没有，那我下次做选择时应该做出什么改变？</li>
+<li>当我问我自己：**我这把怎么样会输？**时，我真的判断对对手的牌/当时的形势了吗？我的对手有没有打出让我出乎意料的操作？我下次是不是应该防一下？</li>
+<li>当我问我自己：**我需要做什么才能赢下这局游戏？**时，我所想的方向正确吗？有没有胜率更高的方法？</li>
+</ul>
+</li>
+</ol>
+<h2 id="四-如何在一局游戏之后进行反思">四. 如何在一局游戏之后进行反思</h2>
+<h3 id="第一步思考">第一步：思考</h3>
+<ul>
+<li>试着记住一局游戏中<strong>最关键的一回合</strong>。在那个回合中你可能不太确定该出什么牌，或者不太确定是解场还是打脸。</li>
+<li>如果你实在记不住具体是哪一回合，你可以在 HSReplay 的记牌器 HS Deck Tracker  中<strong>回看</strong>你的对局。</li>
+<li>问你自己：**我做出的选择有效吗？**或者当时是不是有更好的选择？</li>
+<li>如果你的决定是有效的，你能说出为什么这个选择比另外的好吗？你下次在相同的情况还能做出同样的决定吗？</li>
+<li>如果你的决定没有奏效，你能说出为什么别的选择更好吗？下次遇到相同的情况我能不能做出不同的选择？</li>
+</ul>
+<h3 id="第二步记录">第二步：记录</h3>
+<ul>
+<li>在你思考过后，试着写下一个你在本局游戏学到最有用的小点。</li>
+<li>如果你在反思中没有学到什么，那你的第一条反思可以是更大局观的东西。更大局观的翻译可以帮助你更加整体的理解这个游戏，而不是仅仅理解单独的一套套牌。</li>
+<li>例如：1）每个回合开始总是先抽牌。2）出牌总比不出好。</li>
+<li>当你在这个游戏里的经验和反思的经验越来越丰富，你的反思应该变得更加的<strong>细节</strong>。</li>
+<li>试着在特定的对局，特定的条件下做出正确的选择。</li>
+</ul>
+<h3 id="第三步落实你的反思对局完的反思时间最好为2分钟">第三步：落实你的反思（对局完的反思时间最好为2分钟）</h3>
+<ul>
+<li>关于反思的最后一点是将你的一个个小点都很好的<strong>利用</strong>起来，逐渐的形成一个<strong>完美的游戏计划</strong>。</li>
+<li>这也是职业选手提高他们对局胜率的方法</li>
+<li>可能要将一套套牌玩上上百局才能总结出针对这一套牌的游戏计划</li>
+<li>但尽管你觉得你的游戏计划已经是完美了的，你也应该在每个对局之后<strong>持续的反思</strong>，你可能会收获到之前完全没有注意到的，从而把你的理解提高一个档位！</li>
+</ul>
+<h1 id="结语">结语</h1>
+<p>玩游戏完全可以当作一种娱乐消遣的手段，但我知道其实很多玩家并不满足于此。这四个步骤可能说的并不完全对，但至少可以给人启发，也可以将其中一些模式套用到别的游戏。不管怎样，希望大家的技术可以越来越好！</p>
+<p>09/06/2022 于 York</p>
+<h1 id="引用">引用</h1>
+<p>https://twitter.com/MeatiHS/status/1486600463126437894</p>
+<p>本期博客图片版：<br>
+<img src="https://onioncinema.github.io/post-images/1655012767708.jpg" alt="" loading="lazy"></p>
+
+        </div>
+
+        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://onioncinema.github.io/post/截止至 2022-08-19 参与翻译作品汇总/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  截止至 2022-08-19 参与翻译作品汇总
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://onioncinema.github.io/post/huang-jin-you-jie-shu-ju-wu-jie/">
+                <h3 class="post-title">
+                  黄金有价，数据无价！
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+
+      </div>
+    </div>
+
+    <script src="https://onioncinema.github.io/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+  </body>
+</html>
