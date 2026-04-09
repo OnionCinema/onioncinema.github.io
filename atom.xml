@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://onioncinema.github.io</id>
+    <title>Gridea</title>
+    <updated>2026-04-09T02:34:34.890Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://onioncinema.github.io"/>
+    <link rel="self" href="https://onioncinema.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://onioncinema.github.io/images/avatar.png</logo>
+    <icon>https://onioncinema.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2026, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[测试文章]]></title>
+        <id>https://onioncinema.github.io/post/ce-shi-wen-zhang/</id>
+        <link href="https://onioncinema.github.io/post/ce-shi-wen-zhang/">
+        </link>
+        <updated>2026-03-20T18:08:23.000Z</updated>
+        <content type="html"><![CDATA[<p>https://onioncinema.notion.site/41c338ae26bf83d3b4de812a241858d4?v=363338ae26bf827a958088d060351032&amp;source=copy_link</p>
+]]></content>
+    </entry>
+</feed>
