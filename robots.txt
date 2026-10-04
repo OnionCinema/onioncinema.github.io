@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://naowu.blog/sitemap.xml
+Sitemap: https://naowu.top/sitemap.xml
