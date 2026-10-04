@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://naowu.top/</loc>
-    <lastmod>2026-10-04T18:13:55+08:00</lastmod>
+    <loc>https://www.naowu.top/</loc>
+    <lastmod>2026-10-04T18:14:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://naowu.top/post/</loc>
-    <lastmod>2026-10-04T18:13:55+08:00</lastmod>
+    <loc>https://www.naowu.top/post/</loc>
+    <lastmod>2026-10-04T18:14:10+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://naowu.top/tags/</loc>
-    <lastmod>2026-10-04T18:13:55+08:00</lastmod>
+    <loc>https://www.naowu.top/tags/</loc>
+    <lastmod>2026-10-04T18:14:10+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://naowu.top/archives/</loc>
-    <lastmod>2026-10-04T18:13:55+08:00</lastmod>
+    <loc>https://www.naowu.top/archives/</loc>
+    <lastmod>2026-10-04T18:14:10+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://naowu.top/links/</loc>
-    <lastmod>2026-10-04T18:13:55+08:00</lastmod>
+    <loc>https://www.naowu.top/links/</loc>
+    <lastmod>2026-10-04T18:14:10+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
